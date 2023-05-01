@@ -157,7 +157,7 @@ h2 {
 
 .pageimgs {
     margin-bottom: 90px;
-     width: 199px;
+    width: 199px;
     height: 178px;
     border-radius: 4px;
 }
@@ -165,19 +165,23 @@ h2 {
 .header {
     width: full;
     height: 58px;
-    
+
 }
-.section{
+
+.section {
     display: flex;
     margin-top: 40px;
 }
+
 .section2 {
     width: 1200px;
     height: 931px;
     align-items: center;
 }
-.section3{
+
+.section3 {
     width: 390px;
     height: auto;
     margin-top: 70px;
 }
+
