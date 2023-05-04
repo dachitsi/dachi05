@@ -1,0 +1,197 @@
+@font-face {
+    font-family: blinker;
+    src: url(fonts/Blinker-Regular.ttf);
+    font-family: blink;
+    src: url(fonts/Blinker-Thin.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+
+}
+
+body {
+    background-color: #747d8cc6;
+    background-image: url(img/Rectangle.svg);
+    overflow-x: hidden;
+}
+
+.center {
+    align-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    animation-name: header;
+    animation-duration: 7s;
+    animation: header 8s infinite;
+}
+
+.logo {
+    width: 70px;
+    padding-left: 60px;
+    align-items: center;
+    padding-top: 3px;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    font-size: 20px;
+    font-family: blinker;
+    color: antiquewhite;
+    padding-left: 60px;
+    padding-top: 14px;
+}
+
+.cross {
+    font-family: blink;
+    font-size: 40px;
+    color: #c29049;
+    font-weight: 200;
+    word-spacing: 20px;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-bottom: 180px;
+    background-color: #402306;
+    height: 60px;
+    position: absolutes;
+}
+
+@keyframes header {
+    0% {
+        background-color: #402306;
+    }
+
+    40% {
+        background-color: #c29049;
+    }
+
+    60% {
+        background-color: #464c47;
+    }
+
+    80% {
+        background-color: #a43131;
+    }
+
+    100% {
+        background-color: #000000;
+    }
+}
+
+@keyframes wheel {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes wheelgray {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes porshe {
+    from {
+        left: -75vh
+    }
+
+    to {
+        left: 200vh
+    }
+}
+
+@keyframes porshegray {
+    from {
+        left: 200vh
+    }
+
+    to {
+        left: -75vh
+    }
+}
+
+.wheel1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.wheel2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.porshe {
+    width: 40%;
+    position: relative;
+    animation: porshe 8s infinite linear;
+    margin-top: 120px;
+}
+
+.wheel {
+    position: absolute;
+    position: relative;
+    display: flex;
+    animation: wheel 4s infinite linear;
+    justify-content: center;
+    align-items: center;
+}
+
+.wheel:nth-child(2) {
+    left: -23vh;
+    bottom: 15vh;
+}
+
+.wheel:nth-child(3) {
+    left: 24vh;
+    bottom: 29vh;
+}
+
+.porshegray {
+    width: 40%;
+    position: relative;
+    animation: porshegray 8s infinite linear;
+}
+
+.wheelgray {
+    position: absolute;
+    position: relative;
+    display: flex;
+    animation: wheel 4s infinite linear;
+    justify-content: center;
+}
+
+.wheelgray:nth-child(2) {
+    left: -23vh;
+    bottom: 15vh;
+}
+
+.wheelgray:nth-child(3) {
+    left: 22vh;
+    bottom: 29vh;
+}

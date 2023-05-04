@@ -22,7 +22,10 @@ a:hrief nav {
     text-decoration: none; 
     text-underline-position: ;
 }
-a:visited { text-decoration: none; }
+a 
+{ text-decoration: none; 
+    color: #DADADA;
+}
 
 .container {
     width: 100%;
@@ -198,7 +201,7 @@ margin-left: 40px;
     background-image: url(img/christian-wiediger-jqknIEzGUfA-unsplash-PhotoRoom\ 1.svg);
     background-repeat: repeat-x;
    margin-top: 50px;
-    }
+}
     
 
-}
+
